@@ -1,0 +1,574 @@
+@font-face {
+    font-family: 'Lora Variable';
+    src: url('../fonts/Lora-VariableFont_wght.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Noto Serif Devanagari';
+    src: url('../fonts/NotoSerifDevanagari-VariableFont_wdth,wght.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cabin Variable';
+    src: url('../fonts/Cabin-VariableFont_wdth,wght.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Almarai Regular';
+    font-weight: normal;
+    src: url('../fonts/Almarai-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Almarai Light';
+    font-weight: normal;
+    src: url('../fonts/Almarai-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Almarai Bold';
+    font-weight: normal;
+    src: url('../fonts/Almarai-Bold.ttf');
+}
+
+:root {
+    --primary-green: darkolivegreen;
+    --primary-blue: royalblue;
+    --middle-tinted-blue: rgb(72, 94, 161);
+    --maroon-red: rgb(156, 46, 46);
+    --button-primary: #4f6bbd;
+    --button-secondary: (--maroon-red);
+    --button-primary-blue: rgb(51, 95, 228);
+    --button-secondary-green: rgb(31, 193, 49);
+    --button-primary-green: rgb(68, 179, 58);
+    --button-primary-orange: rgb(222, 121, 19);
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+#top__layer {
+    background-color: transparent;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
+
+section .btn-primary {
+    background-color: var(--button-primary-green);
+    border: 1px solid var(--button-primary-green);
+}
+
+section .btn-primary:hover {
+    background-color: var(--button-secondary-green);
+    border: 1px solid var(--button-secondary-green);
+}
+
+section .btn-primary:active {
+    background-color: var(--button-secondary-green);
+    border: 1px solid var(--button-secondary-green);
+}
+
+section .btn-primary:focus {
+    background-color: var(--button-secondary-green);
+    border: 1px solid var(--button-secondary-green);
+}
+
+section .btn-secondary {
+    background-color: var(--button-primary);
+    border: 1px solid var(--button-primary);
+}
+
+section .btn-secondary:hover {
+    background-color: var(--button-primary-blue);
+    border: 1px solid var(--button-primary-blue);
+}
+
+section .btn-secondary:focus {
+    background-color: var(--middle-tinted-blue);
+    border: 1px solid var(--middle-tinted-blue);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 200ms ease-out;
+}
+
+a:hover {
+    color: rgb(100, 227, 96);
+}
+
+:scroll__down__button {
+    content: '';
+    display: block;
+    position: fixed;
+    z-index: 10;
+    
+}
+
+
+#hero__section {
+    background-image: url('../img/stock-photo-healthy-food-clean-eating-selection-fruit-vegetable-seeds-superfood-cereal-leaf-vegetable-on-722718097.jpg');
+
+    background-size: cover;
+    
+
+}
+
+#hero__quote {
+    font-size: 4.5em;
+}
+
+@media (max-width < 768) {
+    #hero__quote {
+        font-size: 3em;
+    }
+}
+
+#hero__header {
+    font-family: 'Lora Variable';
+}
+
+#features__section {
+    /* rgb(158, 47, 158) */
+    background-image: linear-gradient(var(--primary-blue), var(--middle-tinted-blue));
+    position: relative;
+    z-index: 1;
+}
+
+/* #features__heading__container {
+    background-image: linear-gradient(royalblue, rgb(72, 94, 161));
+}
+
+#features_explanation {
+    background-image: linear-gradient(rgb(72, 94, 161), rgb(158, 47, 158));
+} */
+
+#make__budgets__text {
+    transition: all ease-in 300ms;
+    animation: 15s linear show-make-budget-body infinite;
+    background-color: #00000000;
+}
+
+#compare__prices__text {
+    transition: all ease-in 300ms;
+    animation: 15s linear show-compare-body infinite;
+    background-color: #00000000;
+}
+
+#purchase__text {
+    transition: all ease-in 300ms;
+    animation: 15s linear show-purchase-body infinite;
+    background-color: #00000000;
+}
+
+#make__budgets__container {
+    overflow-x: hidden;
+    width: 33.333%;
+    animation: 15s ease-in-out shrink-budget-container infinite;
+    background-image: url('../img/stock-photo-young-woman-checking-bills-taxes-bank-account-balance-and-calculating-credit-card-expenses-at-home-1607339170.jpg'); 
+    background-size: cover;
+}
+
+#compare__prices__container {
+    overflow-x: hidden;
+    width: 33.3333%;
+    animation: 15s ease-in-out shrink-compare-prices-container infinite;
+    background-image: url('../img/stock-photo-symbol-of-law-and-justice-law-and-justice-concept-140867215.jpg'); 
+    background-size: cover;
+}
+
+#purchase__container {
+    overflow-x: hidden;
+    width: 33.3333%;
+    animation: 15s ease-in-out shrink-purchase-container infinite;
+    background-image: url('../img/stock-photo-girl-with-brown-wallet-full-of-money-394142461.jpg'); 
+    background-size: cover;
+    background-position:  center;
+}
+
+#make__budgets__body {
+    transition: all 500ms ease-in;
+    animation: 15s 500ms ease-in-out darken-make-budget infinite;
+}
+
+#compare__prices__body {
+    transition: all 500ms ease-in;
+    animation: 15s 500ms ease-in-out darken-compare-prices infinite;
+}
+
+#purchase__body {
+    transition: all 500ms ease-in;
+    animation: 15s 500ms ease-in-out darken-purchase infinite;
+}
+
+@keyframes shrink-compare-prices-container {
+    0% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0.75);
+    }
+    
+    33% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0.75);
+
+    }
+
+    35% {
+        width: 90%;
+        background-size: 35em;
+        transform: scaleY(1);
+
+    }
+
+    60% {
+        width: 90%;
+        background-size: 37em;
+        transform: scaleY(1);
+    }
+
+    66% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0.75);
+
+    }
+
+    98% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0.75);
+
+    }
+
+    100% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0.75);
+    }
+}
+
+@keyframes shrink-budget-container {
+    0% {
+        width: 90%;
+        background-size: 50em;
+        transform: scaleY(1);
+    }
+    
+    33% {
+        width: 90%;
+        background-size: 52em;
+        transform: scaleY(1);
+    }
+
+    35% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0.75);
+    }
+
+    60% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0.75);
+    }
+
+    63% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0);
+    }
+
+    98% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0);
+
+    }
+
+    100% {
+        width: 90%;
+        background-size: cover;
+        transform: scaleY(1);
+    }
+}
+
+@keyframes shrink-purchase-container {
+    0% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0);
+    }
+    
+    33% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0);
+    }
+
+    35% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0.75);
+
+    }
+
+    60% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0.75);
+    }
+
+    63% {
+        width: 90%;
+        background-size: 50em;
+        transform: scaleY(1);
+    }
+
+    98% {
+        width: 90%;
+        background-size: 56em;
+        transform: scaleY(1);
+
+    }
+
+    100% {
+        width: 20px;
+        background-size: cover;
+        transform: scaleY(0);
+    }
+}
+
+@keyframes show-make-budget-body {
+    0% {
+        opacity: 100;
+        transform: translateY(100);
+        background-color: #00000095;
+    }
+
+    33% {
+        opacity: 100;
+        transform: translateY(0);
+        background-color: #00000095;
+    }
+
+    35% {
+        opacity: 0;
+        transform: translateY(100);
+        background-color: #00000000;
+    }
+
+    95% {
+        opacity: 0;
+        transform: translateY(100);
+        background-color: #00000000;
+    }
+}
+
+@keyframes show-compare-body {
+    35% {
+        opacity: 100;
+        transform: translateY(100);
+        background-color: #00000095;
+    }
+
+    60% {
+        opacity: 100;
+        transform: translateY(0);
+        background-color: #00000095;
+    }
+
+    63% {
+        opacity: 0;
+        transform: translateY(100);
+        background-color: #00000000;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100);
+        background-color: #00000000;
+    }
+
+    0% {
+        opacity: 0;
+        transform: translateY(100);
+        background-color: #00000000;
+
+    }
+
+    33% {
+        opacity: 0;
+        transform: translateY(100);
+        background-color: #00000000;
+    }
+}
+
+@keyframes show-purchase-body {
+    63% {
+        opacity: 100;
+        transform: translateY(100);
+        background-color: #00000095;
+    }
+
+    95% {
+        opacity: 100;
+        transform: translateY(0);
+        background-color: #00000095;
+    }
+
+    0% {
+        opacity: 0;
+        transform: translateY(100);
+        background-color: #00000000;
+    }
+
+    60% {
+        opacity: 0;
+        transform: translateY(100);
+        background-color: #00000000;
+    }
+}
+
+@keyframes darken-make-budget {
+    0% {
+        opacity: 100;
+        transform: translateY(1px);
+        height: 200px;
+    }
+    
+    33% {
+        opacity: 100;
+        transform: translateY(1px);
+        height: 200px;
+    }
+
+    35% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+
+    60% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+
+    63% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+
+    98% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(1px);
+        height: 200px;
+    }
+}
+
+@keyframes darken-compare-prices {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+    
+    33% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+
+    35% {
+        opacity: 100;
+        transform: translateY(1px);
+        height: 200px;
+    }
+
+    60% {
+        opacity: 100;
+        transform: translateY(1px);
+        height: 200px;
+    }
+
+    63% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+
+    98% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+}
+
+@keyframes darken-purchase {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+    
+    33% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+
+    35% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+
+    60% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+
+    63% {
+        opacity: 100;
+        transform: translateY(1px);
+        height: 200px;
+    }
+
+    98% {
+        opacity: 100;
+        transform: translateY(1px);
+        height: 200px;
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100px);
+        height: 1px;
+    }
+}

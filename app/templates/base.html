@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/lib/bootstrap-icons-1.11.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Budget Purchaser</title>
+</head>
+<body style="overflow: hidden scroll;">
+    {% block page %}
+    {% endblock page %}
+
+    <footer class="pt-5" style="min-height: 50vh; background-color: #333333;">
+        <div class="container">
+            <div class="row" style="color: white">
+                <ul class="col-2 p-3" style="list-style: none">
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Legal</li>
+                </ul>
+                <ul class="col-2 p-3" style="list-style: none">
+                    <li>Social</li>
+                    <li>Copyright 2023</li>
+                    <li>Made with . </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="static/lib/jquery/dist/jquery.min.js"></script>
+    
+    <script src="static/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="static/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    {% block script %}
+    {% endblock script %}
+</body>
+</html>

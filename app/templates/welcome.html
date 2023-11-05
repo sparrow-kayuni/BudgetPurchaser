@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+
+{% block page %}
+<div class="d-block" id="top__layer">
+    <div class="d-flex p-4 w-100" style="position: absolute; bottom: 0; flex-direction: row; justify-content: flex-end; align-items: center;">
+        <a href="#hero__section">
+            <button class="btn px-2" style=" background-color: rgb(89, 83, 78, 0.6); border-radius: 2px; color: black; min-width: 100px;
+            ">
+                <div style="transform: rotate(-90deg); color: white" >></div>
+            </button>
+        </a>
+    </div>
+</div>
+<section class="" id="hero__section" style="background-color: #F1A104;">
+    <div class="py-5" style="background-color: #232323a0;">
+        <div class="container">
+            <div class="row" style="min-height: 80vh;">
+                <div id="hero__quote" class="col d-flex" style="flex-direction: column; justify-content: center;">
+                    <div class="d-flex" style=" color: white; flex-direction: column; align-items: left;">
+                        <span style="font-size: smaller;">Shopping</span>
+                        <br>
+                        <span style="">reimagined.</span>
+                    </div>
+                </div>
+                <div class="col d-flex" id="hero__header" style="flex-direction: column; justify-content: center; align-items: flex-end; background-color: #00000087; border-radius: 3px; color: white">
+                    <div class="p-4" style="text-align: right;">
+                        <p style="font-size: 2em; font-weight: lighter;"><span>Market Mall</span>  <br><span style="font-size: 1.3em; font-weight: normal">Super Shopper</span></p>
+                    </div>
+                    <div class="p-3 mx-2 w-75 d-flex" style="justify-content: flex-end; ">
+                        <a href="{{ url_for('home') }}" class="mx-2">
+                            <button class="btn btn-primary px-5 py-2">Sign Up</button> 
+                        </a>
+                        <a href="{{ url_for('home') }}" class="mx-2">
+                            <button class="btn btn-secondary px-5 py-2">Sign In</button> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="p-4" id="features__section">
+    
+    <div class="px-5 pb-5" id="features_explanation">
+        <div class="row p-2">
+            <div class="pt-2" style="color: white; font-size: 2em;">
+                <h2 style="font-weight: bolder;">Super Budgetor</h2>
+            </div>
+            <div class="col-4 d-flex">
+                <div class="p" style="text-align: right;">
+                    <p style="color: white;">
+                        <span style="font-size: 1.7em;">
+                           Create, edit & share   
+                        </span> budgets
+                        with our <a href="{{ url_for('home') }}">  <span>Super Budgetor</span></a> and tweak items to suit your needs.
+                    </p>
+                </div>
+            </div>
+            <!-- budgetor screenshot -->
+            <div class="col-8 d-flex" style="flex-direction: row; justify-content: flex-end;">
+                <div class="d-block" style="width: 60%; height: 300px; background-color: #fff;"></div>
+            </div>
+        </div>
+        <div class="row pt-4 px-2 mt-2">
+            <div class="d-flex pt-2" style="flex-direction: row; justify-content: flex-end; color: white; font-size: 2em;">
+                <h2 style="font-weight: bolder;">Super Searcher</h2>
+            </div>
+            <!-- searcher screenshot -->
+            <div class="col-8 d-flex" style="flex-direction: row; justify-content: flex-start;">
+                <div class="d-block" style="width: 60%; height: 300px; background-color: #fff;"></div>
+            </div>
+            <div class="col-4" style="text-align: right;">
+                <p style="color: white;">
+                    <span style="font-size: 1.7em;">Search for prices</span>  of goods and services available in shops near you.
+                </p>
+            </div>
+            
+        </div>
+        <div class="row p-2">
+            <div class="pt-2" style="color: white; font-size: 2em;">
+                <h2 style="font-weight: bolder;">Super Shopper</h2>
+            </div>
+            <div class="col-4 d-flex">
+                <div class="p" style="text-align: left;">
+                    <p style="color: white;">
+                        <span style="font-size: 1.7em;">
+                           Create shopping list   
+                        </span> from a budget and send a purchase order from shops near you.
+                    </p>
+                </div>
+            </div>
+            <!-- shopper screenshot -->
+            <div class="col-8 d-flex" style="flex-direction: row; justify-content: flex-end;">
+                <div class="d-block" style="width: 60%; height: 300px; background-color: #fff;"></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="pt-5" style="background-color: darkolivegreen;">
+    <div class="p-5 d-flex" style="min-height: 80vh; flex-direction: column; justify-content: flex-start;">
+        <div class="d-flex mb-3 p-2" style="flex-direction: row; justify-content: center;">
+            <div class="d-flex ">
+                <h3 style="font-size: 3rem; color: white;">Our Customers Say</h3>
+            </div>
+        </div>
+        <div class="row" style="height: flex; justify-content: center;">
+            <div class="col-3 mx-1 d-flex p-4" style="flex-direction: column; justify-content: space-evenly; background-color: white;">
+                <div class="d-flex " style="min-height: 40vh;">
+                    
+                </div>
+            </div>
+
+            <div class="col-3 mx-1 d-flex p-4" style="flex-direction: column; justify-content: space-evenly; background-color: white;">
+                <div class="d-flex " style="min-height: 40vh;">
+                    
+                </div>
+            </div>
+
+            <div class="col-3 mx-1 d-flex p-4" style="flex-direction: column; justify-content: space-evenly; background-color: white;">
+                <div class="d-flex " style="min-height: 40vh;">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-5" style="background-color: darkolivegreen;">
+    <div class="d-flex" style="flex-direction: row; justify-content: center;">
+        <div class="p-4" style="color: white;">
+            <h2 style="font-size: 3em;">Features</h2>
+        </div>
+    </div>
+    <div class="row px-5 pb-5 pt-2" id="features__heading__container" style="min-height: 80vh; justify-content: center; ">
+        <div class="col-lg-5 col-md-8 col-12 d-flex my-2" style="flex-direction: row; min-height: 400px;">
+            <div class="px-0 d-flex" id="make__budgets__container" style="background-color: dimgray;">
+                <div class="d-flex p-4 w-100" id="make__budgets__text" style="flex-direction: column; justify-content: flex-end; ">
+                    <div class="d-flex" style="color: white !important;">
+                        <h3 style="font-size: 3rem;">Manage Budgets</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex px-0" id="compare__prices__container" style="flex-direction: column; justify-content: flex-end; background-color: lightgreen;">
+                <div class="d-flex p-4 w-100 h-100" id="compare__prices__text" style="flex-direction: column; justify-content: flex-end; ">
+                    <div class="d-flex" style="color: white !important;">
+                        <h3 style="font-size: 3rem;">Get Price Estimates</h3>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex px-0 " id="purchase__container" style="flex-direction: column; justify-content: flex-end; background-color: aliceblue;">
+                <div class="d-flex p-4 w-100 h-100" id="purchase__text" style="flex-direction: column; justify-content: flex-end; ">
+                    <div class="d-flex " style="color: white !important;">
+                        <h3 style="font-size: 3rem;">Purchase</h3>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="col-md-4 col-12 d-flex pt-3" style="flex-direction: column; justify-content: flex-start;">
+            <div class="" id="make__budgets__body">
+                <p style="font-size: 2em; color: white;">Generate, manage and share budgets for whatever you need </p>
+            </div>
+            <div class="" id="compare__prices__body">
+                <p style="font-size: 2em; color: white;">Get accurate price estimates of items in your budget.</p>
+            </div>
+            <div class="" id="purchase__body">
+                <p style="font-size: 2em; color: white;">Create a purchase order for the items on your budget</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="pt-5" style="background-color: white;">
+    <div class="row p-5" style="min-height: 90vh; ">
+        <div class="col-6 d-flex p-4" style="flex-direction: column; justify-content: flex-end; background-color: darkslategrey;">
+            <div class="d-flex ">
+                <h3 style="font-size: 3rem; color: white;">Sign Up</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock page %}
+
+{% block script %}
+<script>
+
+    $(document).ready(() => {
+        $('#make__budgets__container').hover(
+            () => {
+                var makeBudgetText = $('#make__budgets');
+                makeBudgetText.css({'color': 'white'});
+
+                var makeBudgetBody = $('make__budgets__body');
+                
+            },
+            () => {
+                var makeBudgetText = $('#make__budgets');
+                makeBudgetText.css({'color': 'white'});
+
+            }
+        );
+    });
+    
+</script>
+{% endblock script %}
